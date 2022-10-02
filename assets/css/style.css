@@ -102,34 +102,95 @@ li {
 }
 
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
 
+.password-generator {
+  background-color: #3b3b98;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pg-container {
+  max-width: 100%;
+  width: 310px;
+  padding: 20px;
+  background-color: #23235b;
+  box-shadow: 0px 2px 10px rgb(255 255 255 / 20%);
+}
+
+h1 {
+  margin: 10px 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.result-container {
+  height: 40px;
+  padding: 5px 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  letter-spacing: 1px;
+  /* text-indent: -9999px; */
+}
+
+.result {
+  max-width: calc(100% - 40px);
+  word-wrap: break-word;
+}
+
+.generate {width: 100%; }
+
+.btn {
+  padding: 8px;
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+}
+
+.clipboard {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  text-indent: -9999px;
+}
+
+.clipboard::before {
+  content: "\f0ea";
+  font-family: 'FontAwesome';
+  float: right;
+  text-indent: 0;
+}
+
+.setting {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label { cursor: default; };
 
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
